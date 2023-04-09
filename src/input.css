@@ -8,6 +8,60 @@
     }
 }
 
+@layer components {
+    .input {
+        @apply text-gray w-full px-2 py-2 border-b border-b-light-gray
+    }
+    .button {
+        @apply flex justify-center items-center uppercase text-sm text-blue text-center bg-yellow h-12 px-12 transition duration-300 hover:bg-light-gray hover:border-blue font-bold cursor-pointer
+    }
+}
+
+#course-carousel .owl-nav {
+    position: absolute;
+    left: -25px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: calc(100% + 50px);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    align-items: center;
+}
+
+#course-carousel .owl-nav {
+}
+
+#course-carousel .owl-nav button[class*="owl-"] {
+    margin: 0;
+    pointer-events: initial;
+    font-size: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+    color: #002347;
+}
+#course-carousel .owl-nav button[class*="owl-"]:hover {
+    color: #fdc632;
+    background-color: transparent;
+}
+
+#course-carousel .owl-stage-outer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#course-carousel .owl-dots .owl-dot span {
+    background: #fdc632;
+}
+
+#course-carousel .owl-dots .owl-dot.active span {
+    background: #002347;
+}
 
 body.bg {
     background-image: url(../src/images/bgs/home.png);
