@@ -92,7 +92,7 @@
                 <p class="text-center text-gray text-base italic">Replenish man have thing gathering lights yielding shall you</p>
             </div>
 
-            <div id="course-carousel" class="flex gap-10 justify-between pt-[2.4rem] owl-carousel owl-theme">
+            <div id="course-carousel" class="flex gap-10 justify-between pt-[2.4rem] owl-carousel owl-theme custom-edu-pagination">
                 <div>
                     <div class="item group bg-ultra-light-gray transition ease-in-out duration-300 hover:bg-white hover:drop-shadow-xl mx-5">
                         <div class="relative">
@@ -496,7 +496,7 @@
     </div>
 
     <!-- Upcoming Events -->
-    <div class="py-32 bg-blue">
+    <div class="pt-32 pb-28 bg-blue">
         <div class="container">
             <h2 class="text-white text-4xl text-center font-bold pb-2">Upcoming Events</h2>
             <p class="text-gray text-center mb-20">Replenish man have thing gathering lights yielding shall you </p>
@@ -557,7 +557,97 @@
                 </div>
             </div>
         </div>
+        <div class="container flex justify-center pt-10 mt-8">
+            <a href="#" class="text-sm text-yellow uppercase">View all events <span class="text-xl">&#x27F6;</span></a>
+        </div>
     </div>
+
+    <!-- Clients Reviews -->
+    <div class="asd">
+        <div class="container text-center pt-20 mt-14">
+            <h2 class="text-blue text-4xl text-center font-bold pb-2">Client say about me</h2>
+            <p class="text-gray text-center mb-20">Replenish man have thing gathering lights yielding shall you</p>
+            <div id="client-slider" class="pb-12 px-10 owl-theme owl-carousel custom-edu-pagination">
+                <div class="flex gap-14 justify-between">
+                    <div class="flex gap-8 flex-shrink-0 flex-grow-0">
+                        <div>
+                            <img src="images/clients/t1.jpg" alt="">
+                        </div>
+                        <div class="max-w-[15rem] text-left">
+                            <h4 class="text-lg text-blue font-bold pb-4">Elite Martin</h4>
+                            <p class="text-md text-gray">
+                                Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 flex-shrink-0 flex-grow-0">
+                        <div>
+                            <img src="images/clients/t2.jpg" alt="">
+                        </div>
+                        <div class="max-w-[15rem] text-left">
+                            <h4 class="text-lg text-blue font-bold pb-4">Elite Martin</h4>
+                            <p class="text-md text-gray">
+                                Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-14 justify-between">
+                    <div class="flex gap-8 flex-shrink-0 flex-grow-0">
+                        <div>
+                            <img src="images/clients/t1.jpg" alt="">
+                        </div>
+                        <div class="max-w-[15rem] text-left">
+                            <h4 class="text-lg text-blue font-bold pb-4">Elite Martin</h4>
+                            <p class="text-md text-gray">
+                                Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 flex-shrink-0 flex-grow-0">
+                        <div>
+                            <img src="images/clients/t2.jpg" alt="">
+                        </div>
+                        <div class="max-w-[15rem] text-left">
+                            <h4 class="text-lg text-blue font-bold pb-4">Elite Martin</h4>
+                            <p class="text-md text-gray">
+                                Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-14 justify-between">
+                    <div class="flex gap-8 flex-shrink-0 flex-grow-0">
+                        <div>
+                            <img src="images/clients/t1.jpg" alt="">
+                        </div>
+                        <div class="max-w-[15rem] text-left">
+                            <h4 class="text-lg text-blue font-bold pb-4">Elite Martin</h4>
+                            <p class="text-md text-gray">
+                                Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 flex-shrink-0 flex-grow-0">
+                        <div>
+                            <img src="images/clients/t2.jpg" alt="">
+                        </div>
+                        <div class="max-w-[15rem] text-left">
+                            <h4 class="text-lg text-blue font-bold pb-4">Elite Martin</h4>
+                            <p class="text-md text-gray">
+                                Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        
+    </footer>
 
     <script src="../js/jquery-3.6.3.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
@@ -581,7 +671,7 @@
                 margin: 0,
                 items: 3,
                 dots: true,
-                nav: true,
+                nav: false,
                 responsive:{
                     0: {
                         dots: true,
@@ -599,6 +689,30 @@
                         items:3
                     }
                 }
+            })
+            $('#client-slider').owlCarousel({
+                loop: true,
+                margin: 0,
+                items: 1,
+                dots: true,
+                nav: false,
+                // responsive:{
+                //     0: {
+                //         dots: true,
+                //         nav: true,
+                //         items:1
+                //     },
+                //     600:{
+                //         dots: true,
+                //         nav: true,
+                //         items: 1
+                //     },
+                //     1000:{
+                //         dots: true,
+                //         nav: true,
+                //         items: 1
+                //     }
+                // }
             })
         });
         // window.onscroll = function() {
