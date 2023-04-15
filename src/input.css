@@ -6,6 +6,9 @@
     .sticky-nav {
         @apply sticky bg-white/80 backdrop-blur-2xl drop-shadow;
     }
+    .client-slide-cart-shadow {
+        box-shadow: 0 0 15px -8px rgba(0,0,0,0.3);
+    }
 }
 
 @layer components {
