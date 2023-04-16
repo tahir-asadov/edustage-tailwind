@@ -34,8 +34,6 @@
     align-items: center;
 }
 
-.custom-edu-pagination .owl-nav {
-}
 
 .custom-edu-pagination .owl-nav button[class*="owl-"] {
     margin: 0;
@@ -66,12 +64,18 @@
     background: #002347;
 }
 
-body.bg {
-    background-image: url(../src/images/bgs/home.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-}
+@media only screen and (max-width: 728px) {
 
-body.bg > * {
-    opacity: 0.5;
+    .custom-edu-pagination .owl-nav {
+        display: none!important;
+    }
+
+    body.mobile-menu-open .mobile-menu-overlay,
+    body.mobile-menu-open .mobile-menu {
+        display: block;
+    }
+    
+    body.mobile-menu-open {
+        overflow: hidden;
+    }
 }
