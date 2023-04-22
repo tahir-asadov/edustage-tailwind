@@ -6,8 +6,9 @@
     .sticky-nav {
         @apply sticky bg-white/80 backdrop-blur-2xl drop-shadow;
     }
+
     .client-slide-cart-shadow {
-        box-shadow: 0 0 15px -8px rgba(0,0,0,0.3);
+        box-shadow: 0 0 15px -8px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -15,8 +16,9 @@
     .input {
         @apply text-gray w-full px-2 py-2 border-b border-b-light-gray
     }
+
     .button {
-        @apply flex justify-center items-center uppercase text-sm text-blue text-center bg-yellow h-12 px-12 transition duration-300 hover:bg-light-gray hover:border-blue font-bold cursor-pointer
+        @apply flex justify-center items-center uppercase text-sm text-blue text-center bg-yellow h-12 px-12 transition duration-300 hover: bg-light-gray hover:border-blue font-bold cursor-pointer
     }
 }
 
@@ -46,6 +48,7 @@
     transition: color 0.3s ease-in-out;
     color: #002347;
 }
+
 .custom-edu-pagination .owl-nav button[class*="owl-"]:hover {
     color: #fdc632;
     background-color: transparent;
@@ -64,17 +67,35 @@
     background: #002347;
 }
 
+body.bg {
+    background-image: url(../src/images/bgs/home.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+body.bg>* {
+    opacity: 0.5;
+}
+
+body.home.bg {
+    background-image: url(../src/images/bgs/home.png);
+}
+
+body.about.bg {
+    background-image: url(../src/images/bgs/about.png);
+}
+
 @media only screen and (max-width: 728px) {
 
     .custom-edu-pagination .owl-nav {
-        display: none!important;
+        display: none !important;
     }
 
     body.mobile-menu-open .mobile-menu-overlay,
     body.mobile-menu-open .mobile-menu {
         display: block;
     }
-    
+
     body.mobile-menu-open {
         overflow: hidden;
     }
