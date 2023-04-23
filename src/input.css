@@ -18,7 +18,7 @@
     }
 
     .button {
-        @apply flex justify-center items-center uppercase text-sm text-blue text-center bg-yellow h-12 px-12 transition duration-300 hover: bg-light-gray hover:border-blue font-bold cursor-pointer
+        @apply flex justify-center items-center uppercase text-sm text-blue text-center bg-yellow h-12 px-12 transition duration-300 hover:bg-light-gray hover:border-blue font-bold cursor-pointer
     }
 }
 
