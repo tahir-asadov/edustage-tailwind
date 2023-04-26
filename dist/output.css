@@ -1113,14 +1113,6 @@ video {
   padding: 2rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1139,6 +1131,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-1 {
@@ -1176,11 +1173,6 @@ video {
   padding-bottom: 10rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1209,12 +1201,16 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
 
-.pb-44 {
-  padding-bottom: 11rem;
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .pb-5 {
@@ -1279,18 +1275,6 @@ video {
 
 .pt-\[2\.4rem\] {
   padding-top: 2.4rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
 }
 
 .text-left {
@@ -1419,23 +1403,25 @@ video {
   box-shadow: 0 0 15px -8px rgba(0, 0, 0, 0.3);
 }
 
-.about-welcome-right {
-  position: relative;
-}
+@media only screen and (min-width: 984px) {
+  .about-welcome-right {
+    position: relative;
+  }
 
-.about-welcome-right:after {
-  content: "";
-  position: absolute;
-  width: calc(100% + 3.125rem);
-  height: 120%;
-  top: 0;
-  left: -30%;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  z-index: -1;
-  border: 0.625rem solid #f9f9ff;
-  border-radius: 0.625rem;
+  .about-welcome-right:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 3.125rem);
+    height: 120%;
+    top: 0;
+    left: -30%;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    border: 0.625rem solid #f9f9ff;
+    border-radius: 0.625rem;
+  }
 }
 
 #course-carousel .owl-nav {
@@ -1659,6 +1645,10 @@ body.about.bg {
     padding-right: 4rem;
   }
 
+  .md\:pt-44 {
+    padding-top: 11rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1675,12 +1665,28 @@ body.about.bg {
 }
 
 @media (min-width: 984px) {
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:max-w-sm {
+    max-width: 24rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 
   .lg\:gap-0 {
     gap: 0px;
+  }
+
+  .lg\:pt-44 {
+    padding-top: 11rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
 
@@ -1691,5 +1697,9 @@ body.about.bg {
 
   .xl\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .xl\:pt-44 {
+    padding-top: 11rem;
   }
 }

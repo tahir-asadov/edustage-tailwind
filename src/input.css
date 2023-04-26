@@ -10,25 +10,6 @@
     .client-slide-cart-shadow {
         box-shadow: 0 0 15px -8px rgba(0, 0, 0, 0.3);
     }
-
-    .about-welcome-right {
-        position: relative;
-    }
-
-    .about-welcome-right:after {
-        content: "";
-        position: absolute;
-        width: calc(100% + 3.125rem);
-        height: 120%;
-        top: 0;
-        left: -30%;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        z-index: -1;
-        border: 0.625rem solid #f9f9ff;
-        border-radius: 0.625rem;
-    }
 }
 
 @layer components {
@@ -86,13 +67,14 @@
     background: #002347;
 }
 
+/*
 body.bg {
     background-image: url(../src/images/bgs/home.png);
     background-repeat: no-repeat;
     background-position: top center;
 }
 
-body.bg>* {
+ body.bg > * {
     opacity: 0.5;
 }
 
@@ -102,7 +84,7 @@ body.home.bg {
 
 body.about.bg {
     background-image: url(../src/images/bgs/about.png);
-}
+} */
 
 @media only screen and (max-width: 728px) {
 
@@ -117,5 +99,30 @@ body.about.bg {
 
     body.mobile-menu-open {
         overflow: hidden;
+    }
+}
+
+@layer utilities {
+    @media only screen and (min-width: 984px) {
+    
+    
+        .about-welcome-right {
+            position: relative;
+        }
+    
+        .about-welcome-right:after {
+            content: "";
+            position: absolute;
+            width: calc(100% + 3.125rem);
+            height: 120%;
+            top: 0;
+            left: -30%;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            z-index: -1;
+            border: 0.625rem solid #f9f9ff;
+            border-radius: 0.625rem;
+        }
     }
 }
