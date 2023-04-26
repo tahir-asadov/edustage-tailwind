@@ -10,6 +10,25 @@
     .client-slide-cart-shadow {
         box-shadow: 0 0 15px -8px rgba(0, 0, 0, 0.3);
     }
+
+    .about-welcome-right {
+        position: relative;
+    }
+
+    .about-welcome-right:after {
+        content: "";
+        position: absolute;
+        width: calc(100% + 3.125rem);
+        height: 120%;
+        top: 0;
+        left: -30%;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: -1;
+        border: 0.625rem solid #f9f9ff;
+        border-radius: 0.625rem;
+    }
 }
 
 @layer components {
